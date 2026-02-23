@@ -14,9 +14,9 @@
 <body class="bg-slate-50">
 
 
-    <header class="header_section w-[80%] mx-auto">
+    <header class="header_section  w-[80%] mx-auto">
         <h1 class=" font-bold text-5xl text-blue-950 py-5">Job Application Tracker</h1>
-        <div class="grid grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
 
             <div class=" bg-white p-4 rounded-md text-gray-950">
                 <p class="text-xl" >Total</p>
@@ -45,7 +45,7 @@
                 <p class="font-bold text-gray-300">8 jobs </p>
             </div>
 
-            <div class="flex gap-2 my-6">
+            <div class="flex flex-col sm:flex-row gap-2 my-6">
                 <button onclick="toggleHandler ('all-btn')" id="all-btn" class="px-8 py-1 bg-blue-500 text-white rounded-sm cursor-pointer">All</button>
                 <button onclick="toggleHandler ('interview-btn')" id="interview-btn" class="px-8 py-1 bg-white text-gray-400 rounded-sm cursor-pointer">Interview</button>
                 <button onclick="toggleHandler ('reject-btn')" id="reject-btn" class="px-8 py-1  bg-white text-gray-400 rounded-sm cursor-pointer">Rejected</button>

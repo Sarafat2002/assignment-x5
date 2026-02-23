@@ -8,7 +8,7 @@ let allBtn = document.getElementById('all-btn');
 let interviewBtn = document.getElementById('interview-btn');
 let rejectBtn = document.getElementById('reject-btn');
 
-// State lists
+// array lists
 let toggleInterviewList = [];
 let toggleRejectList = [];
 
@@ -164,7 +164,7 @@ heroSection.addEventListener('click', function (event) {
 });
 
 // card create
-function createCardElement(item) {
+function createCard(item) {
     let div = document.createElement('div');
     div.className = 'all_card bg-white p-8 mb-4';
     div.innerHTML = `
@@ -203,7 +203,7 @@ function interviewRender() {
         return;
     }
     for (let item of toggleInterviewList) {
-        toggleSection.appendChild(createCardElement(item));
+        toggleSection.appendChild(createCard(item));
     }
 }
 
@@ -220,7 +220,7 @@ function rejectRender() {
         return;
     }
     for (let item of toggleRejectList) {
-        toggleSection.appendChild(createCardElement(item));
+        toggleSection.appendChild(createCard(item));
     }
 }
 
